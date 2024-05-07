@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta
+      property="og:title"
+      content="DEMO"
+    />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="DEMO"
+    />
+    <meta
+      name="description"
+      content="DEMO"
+    />
+    <meta
+      name="keywords"
+      content="DEMO"
+    />
+    <link rel="shortcut icon" href="" />
+    <title>
+      DEMO
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pet.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <!-- <canvas id="canvas2"></canvas> -->
+    <header>
+      <div class="group">
+        <div class="logo logo_en">
+          <a href=".">
+            <h1>
+							<p>LOGO</p>
+            </h1>
+          </a>
+        </div>
+        <div class="logo logo_zh">
+          <a href=".">
+            <p>DEMO</p>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <label class="canStand" for="nav_about">ABOUT</label>
+              <input type="radio" name="nav" id="nav_about" />
+            </li>
+            <li>
+              <label class="canStand" for="nav_service">SERVICE</label>
+              <input type="radio" name="nav" id="nav_service" />
+            </li>
+            <li>
+              <label class="canStand" for="nav_contact">CONTACT</label>
+              <input type="radio" name="nav" id="nav_contact" />
+            </li>
+            <li>
+              <label class="canStand" for="nav_portfolio">PORTFOLIO</label>
+              <input type="radio" name="nav" id="nav_portfolio" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="banner active">
+        <svg
+          width="80%"
+          viewBox="0 0 1117 55"
+          preserveAspectRatio="xMinYMin meet"
+          class="slogan canStand"
+        >
+          <g>
+            <path d="M0.75,2.781h7.3V43.48h21.9v2.801H0.75V2.781z"></path>
+            <path
+              d="M69.651,2.781v2.8h-22.9v15.5h15.3v2.801h-15.3V43.38h22.9v2.801h-30.2v-43.4H69.651z"
+            ></path>
+            <path
+              d="M115.351,2.781v2.8h-15.7v40.7h-7.3V5.58H76.55v-2.8H115.351z"
+            ></path>
+            <path
+              d="M121.951,15.58c1-0.3,1.9-0.699,2.8-1.199c0.9-0.5,1.601-1.101,2.3-1.801c0.7-0.699,1.2-1.399,1.5-2.1
+						c0.4-0.8,0.601-1.6,0.601-2.4c0-0.5-0.101-0.899-0.3-1.3c-0.2-0.399-0.4-0.5-0.801-0.5c-0.3,0-0.5,0.101-0.699,0.2
+						c-0.2,0.1-0.4,0.2-0.601,0.4c-0.2,0.1-0.399,0.3-0.7,0.399c-0.3,0.101-0.6,0.2-1,0.2c-0.399,0-0.899-0.1-1.199-0.3
+						c-0.301-0.2-0.7-0.4-1-0.8c-0.301-0.4-0.5-0.7-0.7-1.2c-0.2-0.4-0.3-0.9-0.3-1.5c0-0.601,0.1-1.101,0.3-1.601s0.6-0.899,1-1.3
+						c0.399-0.3,0.899-0.6,1.399-0.8s1.101-0.3,1.801-0.3c0.8,0,1.6,0.2,2.3,0.5s1.3,0.899,1.8,1.5c0.5,0.6,0.9,1.3,1.2,2.2
+						c0.3,0.899,0.399,1.699,0.399,2.6c0,1.5-0.3,2.9-0.8,4.1c-0.6,1.2-1.3,2.301-2.2,3.301c-0.899,1-2,1.699-3.3,2.199
+						c-1.2,0.601-2.6,0.9-3.899,1v-1.5H121.951z"
+            ></path>
+            <path
+              d="M153.55,44.681c0.9,0,1.7-0.102,2.5-0.4c0.801-0.301,1.4-0.6,2-1.1c0.601-0.5,1-1,1.301-1.602
+						c0.3-0.6,0.5-1.199,0.5-1.898c0-1-0.301-1.9-0.801-2.701c-0.5-0.799-1.199-1.4-2-2c-0.8-0.6-1.8-1.199-2.899-1.699
+						c-1.101-0.5-2.2-1-3.3-1.6c-1.101-0.5-2.2-1.102-3.301-1.701c-1.1-0.6-2-1.299-2.899-2.1c-0.8-0.801-1.5-1.699-2-2.801
+						c-0.5-1.099-0.8-2.299-0.8-3.698c0-1.301,0.3-2.601,0.899-3.7c0.601-1.101,1.4-2.101,2.4-3c1-0.8,2.2-1.5,3.6-2
+						c1.4-0.5,2.9-0.7,4.601-0.7c1.1,0,2.199,0.1,3.1,0.2c1,0.2,1.9,0.399,2.8,0.899c0.9,0.4,1.9,1.101,2.8,1.9c0.9,0.8,1.9,1.9,2.9,3.2
+						l-2.5,2.2c-1.3-2.101-2.7-3.601-4.2-4.601c-1.6-1-3.2-1.5-5-1.5c-1,0-1.8,0.101-2.6,0.3c-0.8,0.2-1.5,0.5-2,1
+						c-0.601,0.4-1,0.9-1.3,1.4c-0.301,0.5-0.5,1.1-0.5,1.7c0,1,0.3,1.899,0.8,2.6c0.6,0.7,1.3,1.4,2.2,2c0.899,0.601,2,1.199,3.1,1.699
+						c1.2,0.5,2.4,1,3.6,1.5c1.2,0.5,2.4,1.1,3.601,1.701c1.2,0.6,2.2,1.299,3.1,2.1c0.9,0.799,1.7,1.699,2.2,2.799
+						c0.6,1,0.8,2.301,0.8,3.701s-0.3,2.699-0.8,4c-0.5,1.199-1.3,2.299-2.4,3.199c-1.1,0.9-2.399,1.6-4,2.1
+						c-1.6,0.5-3.5,0.801-5.6,0.801c-1,0-2-0.1-3-0.199c-1-0.201-2.1-0.5-3.1-0.9s-2.101-1.1-3.101-1.9s-2.1-1.9-3.1-3.199l2.7-2.5
+						c0.8,1.1,1.6,2.1,2.3,2.898c0.7,0.801,1.5,1.5,2.3,2s1.6,0.9,2.4,1.102C151.651,44.579,152.55,44.681,153.55,44.681z"
+            ></path>
+            <path
+              d="M195.451,2.781h14.5c4.5,0,8.3,0.4,11.5,1.2s5.9,2.2,8,4c2.4,2.1,4.3,4.5,5.5,7.2s1.9,5.7,1.9,8.899
+						c0,3.101-0.601,5.899-1.7,8.601c-1.101,2.699-2.7,5-4.9,7s-4.8,3.6-7.899,4.699c-3.101,1.199-6.7,1.699-10.801,1.699h-16.199V2.781
+						H195.451z M202.75,43.079h7.8c2.4,0,4.801-0.398,6.9-1.199c2.2-0.801,4-2,5.7-3.6c1.6-1.6,2.899-3.6,3.8-5.9s1.4-5,1.4-8.1
+						c0-2.7-0.4-5.2-1.301-7.399c-0.899-2.2-2.1-4.2-3.699-5.801c-1.601-1.6-3.4-2.899-5.601-3.8c-2.2-0.899-4.6-1.3-7.1-1.3h-7.9
+						V43.079z"
+            ></path>
+            <path
+              d="M271.651,47.281c-3.4,0-6.5-0.6-9.4-1.801c-2.899-1.199-5.5-2.799-7.6-4.9c-2.2-2.1-3.8-4.5-5.101-7.299
+						c-1.199-2.801-1.899-5.801-1.899-8.9c0-2.1,0.3-4.1,0.8-5.999c0.6-1.9,1.3-3.7,2.4-5.4c1-1.7,2.3-3.2,3.699-4.5
+						c1.5-1.4,3.101-2.5,4.801-3.5c1.8-1,3.699-1.7,5.8-2.3c2.1-0.5,4.2-0.8,6.399-0.8c2.301,0,4.4,0.3,6.5,0.8
+						c2.101,0.5,4,1.3,5.801,2.3c1.8,1,3.399,2.1,4.8,3.5c1.399,1.4,2.7,2.9,3.7,4.5s1.8,3.5,2.399,5.4c0.601,1.899,0.8,3.899,0.8,5.999
+						s-0.3,4.199-0.8,6.1c-0.6,1.9-1.399,3.801-2.399,5.5c-1,1.701-2.301,3.301-3.7,4.701c-1.4,1.398-3.101,2.6-4.8,3.6
+						c-1.801,1-3.7,1.799-5.801,2.299C276.05,46.98,273.851,47.281,271.651,47.281z M271.651,45.079c2.5,0,4.7-0.5,6.6-1.6
+						c1.9-1.1,3.5-2.5,4.8-4.299c1.301-1.801,2.301-4.102,3-6.602c0.7-2.5,1-5.299,1-8.299s-0.3-5.7-1-8.2c-0.699-2.5-1.699-4.6-3-6.399
+						c-1.3-1.8-2.899-3.2-4.8-4.2c-1.899-1-4.1-1.5-6.6-1.5s-4.8,0.5-6.7,1.5s-3.5,2.4-4.8,4.2s-2.3,4-2.9,6.399c-0.7,2.5-1,5.2-1,8.2
+						s0.3,5.799,1,8.299s1.601,4.701,2.9,6.602c1.3,1.898,2.899,3.299,4.8,4.299C266.851,44.579,269.05,45.079,271.651,45.079z"
+            ></path>
+            <path
+              d="M339.35,44.48c1.101,0,2.101-0.1,3.2-0.4c1.101-0.299,2-0.699,2.8-1.299c0.801-0.6,1.5-1.301,2-2.1
+						c0.5-0.801,0.801-1.801,0.801-2.9c0-1.301-0.301-2.5-1-3.6c-0.7-1.102-1.601-2-2.7-2.9c-1.101-0.9-2.4-1.701-3.8-2.4
+						c-1.4-0.801-2.9-1.5-4.4-2.301c-1.5-0.799-2.9-1.6-4.4-2.398c-1.399-0.8-2.699-1.8-3.8-2.8c-1.1-1-2-2.2-2.7-3.5
+						c-0.699-1.301-1-2.7-1-4.4s0.301-3.2,0.9-4.6c0.6-1.4,1.5-2.7,2.7-3.7s2.7-1.9,4.399-2.4c1.801-0.6,3.801-0.899,6-0.899
+						c2.101,0,3.9,0.199,5.5,0.699c1.601,0.4,3,1.101,4.301,1.9c1.199,0.9,2.3,1.9,3.1,3.1c0.9,1.2,1.5,2.7,2.1,4.301l-3.699,1.699
+						c-0.4-1.3-1-2.6-1.7-3.699c-0.7-1.101-1.5-2-2.4-2.801c-0.899-0.8-2-1.399-3.3-1.8c-1.2-0.399-2.6-0.6-4.2-0.6
+						c-1.399,0-2.6,0.2-3.6,0.6c-1,0.4-1.9,0.9-2.601,1.5c-0.699,0.601-1.199,1.3-1.5,2.101c-0.3,0.8-0.5,1.6-0.5,2.399
+						c0,1.101,0.301,2.2,1,3.101c0.7,1,1.601,1.8,2.801,2.699c1.199,0.801,2.5,1.7,4,2.4c1.5,0.8,3,1.6,4.5,2.4
+						c1.5,0.8,3,1.699,4.5,2.499c1.5,0.9,2.8,1.801,4,2.9c1.199,1,2.1,2.199,2.8,3.4c0.7,1.199,1,2.6,1,4.1c0,1.699-0.3,3.299-1,4.9
+						c-0.7,1.5-1.601,2.799-3,4c-1.4,1.199-2.9,2-4.9,2.699c-1.899,0.699-4.2,1-6.8,1c-2.1,0-4-0.199-5.6-0.699
+						c-1.601-0.5-3.101-1.102-4.301-2c-1.199-0.9-2.3-1.9-3.199-3.201c-0.9-1.299-1.601-2.699-2.2-4.299l3.899-1.602
+						c0.5,1.4,1.101,2.701,1.9,3.801s1.7,2.1,2.7,2.801c1,0.799,2.2,1.398,3.399,1.799C336.55,44.38,337.951,44.48,339.35,44.48z"
+            ></path>
+            <path
+              d="M389.55,47.281c-3.399,0-6.5-0.6-9.399-1.801c-2.9-1.199-5.5-2.799-7.601-4.9c-2.2-2.1-3.8-4.5-5.1-7.299
+						c-1.2-2.801-1.9-5.801-1.9-8.9c0-2.1,0.3-4.1,0.8-5.999c0.601-1.9,1.301-3.7,2.4-5.4c1-1.7,2.3-3.2,3.7-4.5
+						c1.5-1.4,3.1-2.5,4.8-3.5c1.8-1,3.7-1.7,5.8-2.3c2.101-0.5,4.2-0.8,6.4-0.8c2.3,0,4.399,0.3,6.5,0.8c2.1,0.5,4,1.3,5.8,2.3
+						s3.4,2.1,4.8,3.5c1.4,1.4,2.7,2.9,3.7,4.5s1.8,3.5,2.4,5.4c0.6,1.899,0.8,3.899,0.8,5.999s-0.3,4.199-0.8,6.1
+						c-0.601,1.9-1.4,3.801-2.4,5.5c-1,1.701-2.3,3.301-3.7,4.701c-1.399,1.398-3.1,2.6-4.8,3.6c-1.8,1-3.7,1.799-5.8,2.299
+						C393.951,46.98,391.85,47.281,389.55,47.281z M389.55,45.079c2.5,0,4.7-0.5,6.601-1.6c1.899-1.1,3.5-2.5,4.8-4.299
+						c1.3-1.801,2.3-4.102,3-6.602s1-5.299,1-8.299s-0.3-5.7-1-8.2s-1.7-4.6-3-6.399s-2.9-3.2-4.8-4.2c-1.9-1-4.101-1.5-6.601-1.5
+						s-4.8,0.5-6.7,1.5c-1.899,1-3.5,2.4-4.8,4.2s-2.3,4-2.899,6.399c-0.7,2.5-1,5.2-1,8.2s0.3,5.799,1,8.299
+						c0.699,2.5,1.6,4.701,2.899,6.602c1.3,1.898,2.9,3.299,4.8,4.299C384.85,44.579,387.05,45.079,389.55,45.079z"
+            ></path>
+            <path
+              d="M426.35,2.781h7.5l16.9,33.4h0.4l16.6-33.4h7.3v43.5h-7.3v-35.7h-0.2l-17.8,35.601h-1.5l-18-35.3h-0.5v35.3
+						h-3.2v-43.4H426.35z"
+            ></path>
+            <path
+              d="M520.05,2.781v2.8h-22.899v15.5h15.3v2.801h-15.3V43.38h22.899v2.801h-30.3v-43.4H520.05z"
+            ></path>
+            <path
+              d="M565.75,2.781v2.8H550.05v40.7h-7.3V5.58h-15.7v-2.8H565.75z"
+            ></path>
+            <path
+              d="M583.15,25.38v20.801h-7.301v-43.4h7.301v19.8h21.801v-19.8h7.299v43.5h-7.299v-20.9H583.15z"
+            ></path>
+            <path d="M627.05,2.781h7.299v43.5h-7.299V2.781z"></path>
+            <path
+              d="M649.15,2.781h4.1l28.5,31.799h0.301V2.781h3.199v44.5h-1.699l-30.801-35.3h-0.299v34.3h-3.301V2.781z"
+            ></path>
+            <path
+              d="M724.75,4.881c-2.6,0-5,0.5-7.299,1.399c-2.201,0.9-4.102,2.3-5.701,4s-2.9,3.8-3.799,6.3
+						c-0.9,2.5-1.301,5.2-1.301,8.2c0,3.1,0.5,5.799,1.5,8.299s2.301,4.602,4,6.301s3.699,3.1,6,4s4.801,1.4,7.4,1.4
+						c1.9,0,3.6-0.301,5.1-0.801s2.9-1.199,4.1-2.199V26.579h-8.199v-2.599h15.5v19.099c-1.301,0.701-2.5,1.301-3.801,1.801
+						c-1.299,0.5-2.699,1-4.199,1.301c-1.5,0.299-3.1,0.6-4.9,0.799c-1.801,0.201-3.801,0.301-6.1,0.301c-2.4,0-4.701-0.301-6.9-0.801
+						s-4.199-1.299-6-2.299s-3.5-2.201-5-3.5c-1.5-1.4-2.699-2.9-3.801-4.5c-1-1.701-1.799-3.4-2.398-5.4c-0.602-1.9-0.9-3.9-0.9-5.9
+						c0-1.999,0.299-3.999,0.799-5.999c0.5-1.9,1.301-3.801,2.301-5.5c1-1.7,2.199-3.301,3.699-4.7c1.4-1.4,3.102-2.601,4.9-3.7
+						c1.801-1,3.801-1.8,5.9-2.4c2.1-0.6,4.4-0.899,6.801-0.899c2.299,0,4.398,0.3,6.398,0.899c2,0.601,3.701,1.4,5.301,2.5
+						c1.6,1.101,3,2.2,4.301,3.601c1.199,1.3,2.299,2.7,3.199,4.2l-3.1,2.1c-1.801-3.5-3.9-6.1-6.1-7.7
+						C730.25,5.681,727.65,4.881,724.75,4.881z"
+            ></path>
+            <path
+              d="M779.75,24.681c0,3,0.5,5.799,1.4,8.199s2.199,4.5,3.801,6.1c1.6,1.6,3.5,3,5.699,3.801
+						c2.199,0.9,4.6,1.299,7.1,1.299c1.5,0,3-0.299,4.4-0.898c1.4-0.602,2.699-1.4,4-2.301c1.199-1,2.301-2,3.301-3.199
+						c1-1.201,1.699-2.4,2.398-3.602l3.102,2c-0.9,1.5-2,2.9-3.201,4.201c-1.199,1.299-2.6,2.5-4.199,3.6c-1.6,1-3.4,1.9-5.4,2.5
+						s-4.301,0.9-6.801,0.9c-3.6,0-6.898-0.6-9.799-1.801c-2.9-1.199-5.5-2.799-7.6-4.9c-2.102-2.1-3.701-4.5-4.9-7.199
+						c-1.1-2.699-1.701-5.6-1.701-8.699c0-2,0.301-4,0.801-5.9c0.5-1.899,1.301-3.7,2.301-5.399c1-1.7,2.199-3.2,3.6-4.7
+						c1.4-1.4,3-2.601,4.9-3.601c1.799-1,3.799-1.8,5.898-2.399c2.102-0.601,4.4-0.8,6.9-0.8c2.301,0,4.5,0.3,6.4,0.899
+						c2,0.601,3.699,1.4,5.301,2.5c1.6,1,3,2.2,4.299,3.601c1.301,1.3,2.301,2.699,3.201,4.199l-3.201,2.101
+						c-1.799-3.5-3.799-6.101-6.1-7.7s-4.801-2.4-7.801-2.4c-2.5,0-4.898,0.5-7,1.4c-2.1,0.9-4.1,2.2-5.699,3.9
+						c-1.6,1.699-2.9,3.8-3.801,6.199C780.25,18.881,779.75,21.681,779.75,24.681z"
+            ></path>
+            <path
+              d="M827.951,2.781h15.1c2.6,0,4.9,0.3,6.9,0.8c2,0.601,3.6,1.301,4.898,2.301c1.301,1,2.301,2.199,3,3.6
+						c0.701,1.4,1,2.9,1,4.5c0,1.4-0.299,2.6-0.799,3.8s-1.201,2.2-2.201,3.2c-0.898,1-2,1.8-3.398,2.5
+						c-1.301,0.7-2.801,1.2-4.301,1.599l15.801,21.102h-8.5l-15.102-20.4h-5.1v20.4h-7.299V2.781L827.951,2.781z M835.25,23.681h4.201
+						c1.6,0,3.199-0.2,4.5-0.7c1.299-0.5,2.6-1.1,3.6-1.9c1-0.8,1.799-1.8,2.4-2.899c0.6-1.101,0.898-2.4,0.898-3.8
+						c0-1.301-0.199-2.5-0.699-3.601c-0.5-1.1-1.1-2-1.9-2.8c-0.799-0.8-1.799-1.4-2.9-1.8c-1.1-0.4-2.398-0.7-3.699-0.7h-6.4V23.681
+						L835.25,23.681z"
+            ></path>
+            <path
+              d="M903.05,2.781v2.8h-22.9v15.5h15.301v2.801H880.15V43.38h22.9v2.801h-30.201v-43.4H903.05z"
+            ></path>
+            <path
+              d="M931.65,1.781l20.5,44.5h-7.4l-6.6-14.5h-18.699l-6.9,14.5h-3.701l20.9-44.5H931.65z M920.65,28.98h16
+						l-7.9-17.199L920.65,28.98z"
+            ></path>
+            <path
+              d="M990.65,2.781v2.8h-15.699v40.7h-7.301V5.58h-15.699v-2.8H990.65z"
+            ></path>
+            <path d="M1000.75,2.781h7.301v43.5h-7.301V2.781z"></path>
+            <path
+              d="M1024.75,2.781l16.4,34.6l15.199-34.6h3.5l-19.699,44.5h-1.9l-21.199-44.5H1024.75z"
+            ></path>
+            <path
+              d="M1099.15,2.781v2.8h-22.9v15.5h15.301v2.801h-15.301V43.38h22.9v2.801h-30.199v-43.4H1099.15z"
+            ></path>
+            <path
+              d="M1111.951,40.38c0.5,0,0.898,0.1,1.398,0.301c0.4,0.199,0.801,0.398,1.102,0.699
+						c0.299,0.301,0.6,0.699,0.799,1.1c0.201,0.4,0.301,0.9,0.301,1.301c0,0.5-0.1,1-0.301,1.4c-0.199,0.398-0.4,0.799-0.799,1.1
+						c-0.301,0.299-0.701,0.6-1.102,0.699c-0.398,0.201-0.898,0.301-1.398,0.301s-1-0.1-1.4-0.301c-0.4-0.199-0.801-0.4-1.1-0.699
+						c-0.301-0.301-0.602-0.701-0.801-1.1c-0.199-0.4-0.301-0.9-0.301-1.4s0.102-0.9,0.301-1.301s0.4-0.799,0.801-1.1
+						c0.299-0.301,0.699-0.6,1.1-0.699C1110.951,40.579,1111.451,40.38,1111.951,40.38z"
+            ></path>
+          </g>
+          <!-- <text x="50%" y="50%">LET's DO SOMETHING CREATIVE.</text> -->
+        </svg>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="content">
+            <h2>
+              <span>A</span>
+              <span>B</span>
+              <span>O</span>
+              <span>U</span>
+              <span>T</span>
+            </h2>
+            <div class="txt">
+              <p class="canStand">
+                【擁有上百間網站規劃經驗，捉住程式盲點和解決 BUG】
+								<p>進入公司後，我發現我有著能夠捉住程式盲點或是解決 BUG 的能力。透過大量蒐集網站的 UI/UX 資料，我能夠與工程師們有效地溝通，共同改善程式，這也使我成為處理客製網站案件的首選人。</span>
+              </p>
+              <p class="canStand">
+								【探索前端世界】
+                <p>隨時間深入瞭解 Web 產業，我也漸漸領略到前端工程師這個領域的魅力。
+
+									我的職位是專案規劃，並不需要直接接觸代碼。然而，有一次我偶然間看到設計師如何透過簡單的代碼調整來改變網站的外觀。這激發了我強烈的好奇心，我的設計師同事簡單地教導了我如何使用開發者工具微調 CSS。從那一刻起，我踏上了自學前端的不歸路（笑）。</p>
+              </p>
+              <p class="canStand">
+                【自主學習的冒險】
+								<p>從最初的 HTML 開始扎根，也學到「語意化」這個重要觀念，投入了大量的時間和精力，學習 HTML、CSS 和 JavaScript 等基礎知識，不斷追求更深入的學習，研究各種前端框架和工具。不僅專注於程式邏輯，我也追求網站的美感和流暢度，不斷挑戰自己，嘗試融入新的設計風格和動態效果。</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
+          <div class="content">
+            <h2>
+              <span>S</span>
+              <span>E</span>
+              <span>R</span>
+              <span>V</span>
+              <span>I</span>
+              <span>C</span>
+              <span>E</span>
+            </h2>
+            <ul>
+              <li><span class="canStand">HTML5</span></li>
+              <li><span class="canStand">CSS3</span></li>
+              <li><span class="canStand">JavaScript</span></li>
+              <li><span class="canStand">React.js</span></li>
+              <li><span class="canStand">Git / GitHub</span></li>
+              <li><span class="canStand">GSAP</span></li>
+              <li><span class="canStand">Three.js</span></li>
+              <li><span class="canStand">WebGL</span></li>
+              <li><span class="canStand">canvas</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="container">
+          <div class="group">
+            <div class="wrapper">
+              <div class="slide">
+                <svg
+                  id="shape"
+                  viewBox="0 0 480 480"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <clipPath id="blob-01" class="blob">
+                      <path
+                        d="M444,291.5Q454,343,410.5,371Q367,399,326,418.5Q285,438,237.5,448Q190,458,144.5,437Q99,416,68.5,376.5Q38,337,32,288.5Q26,240,41.5,196Q57,152,77,106.5Q97,61,144.5,44.5Q192,28,237.5,40Q283,52,323.5,68.5Q364,85,393,118.5Q422,152,428,196Q434,240,444,291.5Z"
+                      />
+                    </clipPath>
+                  </defs>
+                  <a href="." target="_blank">
+                    <image
+                      class="pic"
+                      x="0"
+                      y="0"
+                      width="100%"
+                      height="100%"
+                      clip-path="url(#blob-01)"
+                      xlink:href="img/portfolio/01.jpg"
+                      preserveAspectRatio="xMidYMid slice"
+                    ></image>
+                  </a>
+                </svg>
+                <div class="txt_box">
+                  <div class="type_text">
+                    <span>UI/UX, Web Design, System</span>
+                  </div>
+                  <div class="wrap">
+                    <div class="year_text">2024</div>
+                    <div class="title_text">DEMO/DEMO</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <svg
+                  id="shape"
+                  viewBox="0 0 480 480"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <clipPath id="blob-02" class="blob">
+                      <path
+                        d="M450,288Q439,336,403,367.5Q367,399,329,430.5Q291,462,240.5,460Q190,458,149,432Q108,406,76,370.5Q44,335,37,287.5Q30,240,43,196Q56,152,82.5,113.5Q109,75,152,59Q195,43,242,34.5Q289,26,331,50Q373,74,397.5,113Q422,152,441.5,196Q461,240,450,288Z"
+                      />
+                    </clipPath>
+                  </defs>
+                  <a href="." target="_blank">
+                    <image
+                      class="pic"
+                      x="0"
+                      y="0"
+                      width="100%"
+                      height="100%"
+                      clip-path="url(#blob-02)"
+                      xlink:href="img/portfolio/02.jpg"
+                      preserveAspectRatio="xMidYMid slice"
+                    ></image>
+                  </a>
+                </svg>
+                <div class="txt_box">
+                  <div class="type_text"><span>Programming, System</span></div>
+                  <div class="wrap">
+                    <div class="year_text">2021</div>
+                    <div class="title_text">DEMO</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <svg
+                  id="shape"
+                  viewBox="0 0 480 480"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <clipPath id="blob-03" class="blob">
+                      <path
+                        d="M447.5,284.5Q425,329,397.5,366.5Q370,404,327,418Q284,432,238.5,439Q193,446,156,419Q119,392,89,359.5Q59,327,42,283.5Q25,240,29.5,190.5Q34,141,71.5,108.5Q109,76,148.5,44Q188,12,240.5,10Q293,8,335,38Q377,68,416,102.5Q455,137,462.5,188.5Q470,240,447.5,284.5Z"
+                      />
+                    </clipPath>
+                  </defs>
+                  <a href="." target="_blank">
+                    <image
+                      class="pic"
+                      x="0"
+                      y="0"
+                      width="100%"
+                      height="100%"
+                      clip-path="url(#blob-03)"
+                      xlink:href="img/portfolio/03.jpg"
+                      preserveAspectRatio="xMidYMid slice"
+                    ></image>
+                  </a>
+                </svg>
+                <div class="txt_box">
+                  <div class="type_text"><span>Programming, System</span></div>
+                  <div class="wrap">
+                    <div class="year_text">2023</div>
+                    <div class="title_text">DEMO/DEMO/DEMO</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <svg
+                  id="shape"
+                  viewBox="0 0 480 480"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <clipPath id="blob-04" class="blob">
+                      <path
+                        d="M433.5,286.5Q434,333,398.5,363.5Q363,394,326.5,427Q290,460,239.5,461.5Q189,463,149,433.5Q109,404,88,363.5Q67,323,35.5,281.5Q4,240,22,192Q40,144,65.5,98.5Q91,53,140.5,36.5Q190,20,239,25.5Q288,31,336,45.5Q384,60,407,104.5Q430,149,431.5,194.5Q433,240,433.5,286.5Z"
+                      />
+                    </clipPath>
+                  </defs>
+                  <a href="." target="_blank">
+                    <image
+                      class="pic"
+                      x="0"
+                      y="0"
+                      width="100%"
+                      height="100%"
+                      clip-path="url(#blob-04)"
+                      xlink:href="img/portfolio/04.jpg"
+                      preserveAspectRatio="xMidYMid slice"
+                    ></image>
+                  </a>
+                </svg>
+                <div class="txt_box">
+                  <div class="type_text">
+                    <span>UI/UX, Web Design, System</span>
+                  </div>
+                  <div class="wrap">
+                    <div class="year_text">2022</div>
+                    <div class="title_text">DEMO</div>
+                  </div>
+                </div>
+              </div>
+						</div>
+            <div class="button button-prev canStand">
+              <svg
+                class="portfolio-arrow-left"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="26px"
+                height="79px"
+                viewBox="0 0 26 79"
+                enable-background="new 0 0 26 79"
+                xml:space="preserve"
+              >
+                <polygon
+                  points="24.9,79 0,39.5 24.9,0 26,0.7 1.5,39.5 26,78.4 "
+                ></polygon>
+              </svg>
+            </div>
+            <div class="button button-next canStand">
+              <svg
+                class="portfolio-arrow-right"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="26px"
+                height="79px"
+                viewBox="0 0 26 79"
+                enable-background="new 0 0 26 79"
+                xml:space="preserve"
+              >
+                <polygon
+                  points="1.1,79 0,78.4 24.5,39.5 0,0.7 1.1,0 26,39.5 25.8,39.8 "
+                ></polygon>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="content">
+            <h2>
+              <span>L</span>
+              <span>E</span>
+              <span>T</span>
+              <span>'</span>
+              <span>S</span>
+              <span>&nbsp;</span>
+              <span>T</span>
+              <span>A</span>
+              <span>L</span>
+              <span>K</span>
+            </h2>
+            <form class="canStand">
+              <ul class="form">
+                <li class="need">
+                  <fieldset>
+                    <legend>聯絡項目</legend>
+                    <ul>
+                      <li>
+                        <input
+                          type="radio"
+                          name="need"
+                          value="web"
+                          id="form_web"
+                          checked
+                        />
+                        <label for="form_web">網站規劃洽談</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          name="need"
+                          value="cooperate"
+                          id="form_cooperate"
+                        />
+                        <label for="form_cooperate">合作配合事項</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          name="need"
+                          value="apply"
+                          id="form_apply"
+                        />
+                        <label for="form_apply">客製需求</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </li>
+                <li class="name">
+                  <label for="form_name">name</label>
+                  <input type="text" id="form_name" />
+                </li>
+                <li class="phone">
+                  <label for="form_phone">phone</label>
+                  <input type="text" id="form_phone" />
+                </li>
+                <li class="email">
+                  <label for="form_email">email</label>
+                  <input type="text" id="form_email" />
+                </li>
+                <li class="message">
+                  <label for="form_message">message</label>
+                  <input type="text" id="form_message" />
+                </li>
+                <li class="remind">
+                  <p>
+                    如果您有任何對於網頁設計、網站架設、形象與行銷的需求，可以與我們意見交流，請留下您的資料，或是寄至信箱，我們將全力配合您的問題，做全方位的服務。
+                  </p>
+                  <div>
+                    <a href="mailto:ttyu.hsu@gmail.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1rem"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                        /></svg><span>ttyu.hsu@gmail.com</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="submit">
+                  <div class="bg">
+                    <input type="submit" value="SEND" />
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <!-- <div id="tip">
+		點兩下人物顯示對話框
+	</div> -->
+    <div id="pet">
+      <div class="character"></div>
+      <div id="dialog">
+        <div class="frame"></div>
+        <p></p>
+      </div>
+    </div>
+    <div id="messenger">
+      <div class="container">
+        <header>
+          <div class="logo">
+            <p>智</p>
+          </div>
+          <div class="title">
+            <h2>智能小幫手</h2>
+          </div>
+          <button class="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </header>
+        <section>
+          <div class="dialog_list"></div>
+        </section>
+        <footer>
+          <textarea
+            type="text"
+            class="user_input"
+            id="prompt"
+            placeholder="提出問題..."
+          ></textarea>
+          <button id="send">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30"
+              width="30"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"
+              />
+            </svg>
+          </button>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <!-- <script type="module" src="canvas.js?1"></script> -->
+    <script type="module" src="./js/canvas_2.js?1"></script>
+    <script type="module" src="./js/script.js" defer></script>
+    <script type="module" src="./js/pet.js" defer></script>
+    <script type="module" src="./js/ai.js"></script>
+  </body>
+</html>

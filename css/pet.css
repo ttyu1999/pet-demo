@@ -1,0 +1,447 @@
+:root {
+    --icon-color: #fa6046;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#pet {
+    position: fixed;
+    left: 40%;
+    top: 20%;
+
+    color: #fff;
+
+    cursor: grab;
+    user-select: none;
+
+    display: grid;
+    place-content: center;
+}
+
+#pet .character {
+    --bg-pos-x: 1;
+    --bg-pos-y: 1;
+    --bg-scale: 1;
+    width: calc(1200px / 7 * var(--bg-scale));
+    height: calc(686px / 4 * var(--bg-scale));
+
+    background-image: url('../img/dog.png');
+    background-size: calc(1200px * var(--bg-scale)) calc(686px * var(--bg-scale));
+    background-position: calc(100% / 6 * var(--bg-pos-x)) calc(100% / 3 * var(--bg-pos-y));
+
+    cursor: grab;
+    user-select: none;
+
+}
+
+#pet .character.right {
+    scale: -1 1;
+}
+
+#pet .character.stand {
+    --bg-pos-x: 1;
+    --bg-pos-y: 1;
+    animation: Stand .75s infinite alternate steps(3);
+}
+
+#pet .character.rest {
+    --bg-pos-x: 4;
+    --bg-pos-y: 1;
+    animation: Sleep 1.25s steps(5) forwards;
+}
+
+#pet .character.sit {
+    --bg-pos-x: 5;
+    --bg-pos-y: 2;
+    animation: Sit 1.5s steps(6) forwards;
+}
+
+#pet .character.walk {
+    --bg-pos-x: 2;
+    --bg-pos-y: 2;
+    animation: Move .5s infinite alternate steps(2);
+}
+
+#pet .character.dragging {
+    --rotate: 0;
+    --bg-pos-x: 4;
+    --bg-pos-y: 1;
+    transform: rotate(var(--rotate));
+}
+
+#pet .character.fall {
+    --bg-pos-x: 4;
+    --bg-pos-y: 2;
+}
+
+#pet .character.jump {
+    --bg-pos-x: 3;
+    --bg-pos-y: 3;
+}
+
+#pet .character.climb {
+    --bg-pos-x: 5;
+    --bg-pos-y: 1;
+}
+
+@keyframes Stand {
+    0% {
+        --bg-pos-x: 1;
+        --bg-pos-y: 1;
+    }
+
+    50% {
+         --bg-pos-x: 2;
+         --bg-pos-y: 1;
+    }
+
+    100% {
+         --bg-pos-x: 3;
+         --bg-pos-y: 1;
+    }
+    
+}
+
+@keyframes Sleep {
+    0% {
+        --bg-pos-x: 4;
+        --bg-pos-y: 1;
+    }
+
+    25% {
+        --bg-pos-x: 5;
+        --bg-pos-y: 1;
+    }
+
+    50% {
+        --bg-pos-x: 6;
+        --bg-pos-y: 1;
+    }
+
+    75% {
+        --bg-pos-x: 0;
+        --bg-pos-y: 2;
+    }
+
+    100% {
+        --bg-pos-x: 1;
+        --bg-pos-y: 2;
+    }
+}
+
+@keyframes Sit {
+    0% {
+        --bg-pos-x: 5;
+        --bg-pos-y: 2;
+    }
+
+    20% {
+        --bg-pos-x: 6;
+        --bg-pos-y: 2;
+    }
+
+    40% {
+        --bg-pos-x: 0;
+        --bg-pos-y: 3;
+    }
+
+    60% {
+        --bg-pos-x: 1;
+        --bg-pos-y: 3;
+    }
+
+    80% {
+        --bg-pos-x: 2;
+        --bg-pos-y: 3;
+    }
+
+    100% {
+        --bg-pos-x: 3;
+        --bg-pos-y: 3;
+    }
+}
+@keyframes Move {
+    0% {
+        --bg-pos-x: 2;
+        --bg-pos-y: 2;
+    }
+
+    100% {
+        --bg-pos-x: 3;
+        --bg-pos-y: 2;
+    }
+}
+
+#dialog {
+    --bg-color: #fff;
+    position: absolute;
+    bottom: calc(100% + 1rem);
+
+    width: max-content;
+    max-width: 20rem;
+    padding: .75rem;
+    border-radius: .5rem;
+
+    background-color: var(--bg-color);
+    color: black;
+
+    display: none;
+    /* pointer-events: none; */
+}
+
+#dialog.left {
+    left: 50%;
+}
+
+#dialog.right {
+    right: 50%;
+}
+
+#dialog .frame {
+    position: absolute;
+    bottom: 0;
+
+    border: 1rem solid transparent;
+    border-inline-end-color: var(--bg-color);
+}
+
+#dialog.left .frame {
+    left: 25%;
+    transform: rotate(60deg);
+}
+
+#dialog.right .frame {
+    right: 25%;
+    transform: rotate(120deg);
+}
+
+
+#messenger {
+    position: fixed;
+    width: min(30rem, 90%);
+    bottom: 2.5%;
+    right: 2.5%;
+    z-index: 99;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#messenger.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#messenger .container {
+    background-color: #eee;
+    border-radius: 1.5rem;
+
+    display: grid;
+}
+
+#messenger header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: .5rem 1rem;
+
+    border-block-end: 1px solid #ddd;
+}
+
+#messenger header .logo {
+    padding: .5rem;
+    aspect-ratio: 1 / 1;
+    
+    background-color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#messenger header .logo p {
+    width: 2rem;
+    text-align: center;
+    color: var(--icon-color);
+    font-weight: bold;
+}
+
+#messenger header .title {
+    flex-basis: 100%;
+}
+
+#messenger header .title h2 {
+    color: var(--icon-color);
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+#messenger header .close {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+
+    padding: .75rem;
+
+    display: grid;
+
+    margin-inline-start: auto;
+}
+
+#messenger .dialog_list {
+    padding: 1rem 1.5rem;
+    height: min(40rem, 55dvh);
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+#messenger .dialog {
+    display: flex;
+    align-items: flex-end;
+    gap: .5rem;
+
+    margin-inline-end: auto;
+    margin-block-end: 1.5rem;
+}
+
+#messenger .dialog .txt {
+    width: fit-content;
+    max-width: 80%;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    color: #fff;
+    background-color: var(--icon-color);
+}
+
+#messenger .dialog.loading .txt .icon {
+    display: flex;
+    gap: .25rem;
+    margin: .5rem 0;
+}
+
+#messenger .dialog.loading .txt .icon span {
+    width: .5rem;
+    height: .5rem;
+    background-color: #fff;
+    border-radius: 50%;
+
+    scale: 0;
+    opacity: 0;
+    animation: dotScale .6s ease infinite alternate;
+}
+
+#messenger .dialog.loading .txt .icon span:nth-of-type(2) {
+    animation-delay: .4s;
+}
+
+#messenger .dialog.loading .txt .icon span:nth-of-type(3) {
+    animation-delay: .6s;
+}
+
+@keyframes dotScale {
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+#messenger .dialog[data-self] {
+    direction: rtl;
+}
+
+#messenger .dialog[data-self] .txt {
+    color: #000;
+    background-color: #fff;
+}
+
+#messenger .dialog .txt > p {
+    unicode-bidi: plaintext;
+}
+
+#messenger .dialog time {
+    color: #3f3f3f;
+    font-size: .75rem;
+}
+
+#messenger footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: .5rem 1rem;
+
+    border-block-start: 1px solid #ddd;
+}
+
+#messenger footer .user_input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    width: 100%;
+
+    line-height: 1.75;
+
+    font-size: 1rem;
+
+    resize: none;
+}
+
+#messenger footer .user_input:active {
+    background-color: transparent;
+}
+
+#messenger footer #send {
+    border: none;
+    padding: .25rem;
+
+    cursor: not-allowed;
+}
+
+#messenger footer #send.active {
+    cursor: pointer;
+}
+
+#messenger footer #send svg {
+    fill: #ccc;
+}
+
+#messenger footer #send.active svg {
+    fill: var(--icon-color);
+}
+
+#tip {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    translate: -50% 0;
+    z-index: 99;
+}
+
+@media screen and (width < 1201px) {
+    #pet .character {
+        --bg-scale: 0.75;
+    }
+}
+
+@media screen and (width < 769px) {
+    #pet .character {
+        --bg-scale: 0.5;
+    }
+}
